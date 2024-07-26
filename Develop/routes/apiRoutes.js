@@ -55,4 +55,10 @@ module.exports = (app) => {
             console.error(err);
             res.status(500).send('Internal Server Error');
           } else {
-            res.json({ id
+            res.json({ id: noteId });
+          }
+        });
+      }
+    });
+  });
+};
